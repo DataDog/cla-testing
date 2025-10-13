@@ -1,2 +1,2 @@
-# cla-testing 
-Testing CLA action again
+# cla-testing
+Testing CLA action
