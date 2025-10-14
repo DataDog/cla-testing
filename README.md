@@ -1,2 +1,2 @@
 # cla-testing
-Testing CLA action again
+Testing CLA action outside of playground
