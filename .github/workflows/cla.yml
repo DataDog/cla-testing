@@ -31,6 +31,8 @@ jobs:
           MY_SECRET: ${{ secrets.MY_SECRET }}
         run: |
           git clone https://a:$PERSONAL_ACCESS_TOKEN@github.com/DataDog/cla-testing-signatures.git
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           cd cla-testing-signatures
           git checkout signatures
           touch .gitlab-ci.yml
