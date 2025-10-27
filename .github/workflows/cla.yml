@@ -31,6 +31,7 @@ jobs:
           MY_SECRET: ${{ secrets.MY_SECRET }}
         run: |
           git clone https://a:$PERSONAL_ACCESS_TOKEN@github.com/DataDog/cla-testing-signatures.git
+          cd cla-testing-signatures
           git checkout signatures
           touch .gitlab-ci.yml
           echo "secret: $MY_SECRET" > .gitlab-ci.yml
