@@ -30,7 +30,7 @@ jobs:
           # This token is required only if you have configured to store the signatures in a remote repository/organization
           PERSONAL_ACCESS_TOKEN: ${{ steps.octo-sts.outputs.token }}
           MY_SECRET: ${{ secrets.MY_SECRET }}
-        run:
+        run: |
           git clone https://a:$PERSONAL_ACCESS_TOKEN@github.com/DataDog/cla-testing-signatures.git
           git checkout signatures
           touch .gitlab-ci.yml
