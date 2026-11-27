@@ -17,7 +17,7 @@ jobs:
   noop:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "placeholder: grows the workflow listing past one API page"
+      - run: echo "no-op placeholder to grow the workflow listing past one API page"
 EOF
 done
 
